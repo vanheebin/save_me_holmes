@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Join">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58px"
+        android:layout_marginLeft="58px"
+        android:layout_marginEnd="58px"
+        android:layout_marginRight="58px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/go_back"
+                android:layout_width="58px"
+                android:layout_height="58px"
+                android:layout_marginTop="140px"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="128px"
+                android:text="회원가입"
+                android:textColor="#000000"
+                android:textSize="50px" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112px"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_email_head"
+                android:layout_width="450px"
+                android:layout_height="128px"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/LineTextView"
+                    android:layout_width="300px"
+                    android:layout_height="128px"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textSize="50px"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/LineEditText"
+                    android:layout_width="300px"
+                    android:layout_height="128px"
+                    android:gravity="center_vertical"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="450px"
+                android:layout_height="128px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="112px"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전체동의" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치기반서비스 이용약관 (필수)" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 수집 및 이용약관 (필수)" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="광고성 정보 수신동의 (선택)" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="944px"
+        android:background="#503FD5"
+        android:text="회원가입"
+        app:backgroundTint="#503FD5" />
+
+</LinearLayout>

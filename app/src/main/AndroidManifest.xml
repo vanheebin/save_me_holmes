@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smhrd.seniorproject">
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.SeniorProject">
+
+        //노티피케이션
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+       //자동 초기화 방지
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <activity android:name=".Accept" />
+        <activity android:name=".Accept_registration" />
+        <activity android:name=".Check_email" />
+        <activity android:name=".Check_password" />
+        <activity android:name=".Find_email" />
+
+        <activity android:name=".Join" >
+        </activity>
+        <activity android:name=".LifePattern" />
+        <activity android:name=".Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_gardian" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Mypage_gardian" />
+        <activity android:name=".Mypage_patient" />
+        <activity android:name=".Ragister_G" />
+        <activity android:name=".Register" />
+        <activity android:name=".Reset_password" />
+        <activity android:name=".Setting" />
+        <activity android:name=".splash">
+        </activity>
+        <activity android:name=".Subscription_Information" >
+        </activity>
+        <activity android:name=".Web_cam" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

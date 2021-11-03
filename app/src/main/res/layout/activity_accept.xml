@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Accept">
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="292px"
+        android:text="등록 요청을 수락 하시겠습니까?"
+        android:textColor="#000000"
+        android:textSize="80px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600px"
+        android:layout_height="600px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="188px"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68px"
+        android:text="이름"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24px"
+        android:text="핸드폰 번호"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58px"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="188px"
+        android:layout_marginEnd="58px"
+        android:layout_marginRight="58px"
+        android:background="@drawable/round_all"
+        android:text="수락"
+        app:backgroundTint="#503FD5" />
+
+    <Button
+        android:id="@+id/btn_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58px"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="42px"
+        android:layout_marginEnd="58px"
+        android:layout_marginRight="58px"
+        android:background="@drawable/round_all"
+        android:text="거절"
+        android:textColor="#000000"
+        app:backgroundTint="#FFFFFF" />
+</LinearLayout>

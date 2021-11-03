@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Subscription_Information">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58px"
+        android:layout_marginLeft="58px"
+        android:layout_marginEnd="58px"
+        android:layout_marginRight="58px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/go_back"
+                android:layout_width="58px"
+                android:layout_height="58px"
+                android:layout_marginTop="140px"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="128px"
+                android:text="가입정보 입력"
+                android:textColor="#000000"
+                android:textSize="50px" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:layout_marginTop="162px">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textColor="#000000"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="이름을 입력하세요."
+                android:inputType="textPersonName"
+                android:textSize="50px" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:layout_marginTop="34px">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="#000000"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="***********"
+                android:inputType="textPassword"
+                android:textSize="50px" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:layout_marginTop="34px">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 확인"
+                android:textColor="#000000"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="***********"
+                android:inputType="textPassword"
+                android:textSize="50px" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:layout_marginTop="34px">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="핸드폰 번호"
+                android:textColor="#000000"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="010-0000-0000"
+                android:inputType="textPersonName"
+                android:textSize="50px" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="34px">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자 유형"
+                android:textColor="#000000"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rd_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/check_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="보호자"
+                    android:textSize="50px" />
+
+                <RadioButton
+                    android:id="@+id/check_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="보호인"
+                    android:textSize="50px" />
+            </RadioGroup>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_join_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="595px"
+        android:background="#503FD5"
+        android:text="회원가입"
+        app:backgroundTint="#503FD5" />
+
+</LinearLayout>

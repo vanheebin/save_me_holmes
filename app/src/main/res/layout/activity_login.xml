@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/under_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="190px"
+        android:layout_marginBottom="60dp"
+        android:background="#503FD5"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#503FD5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/find_join_guide2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Login_tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="우리가족 지킴"
+        android:textSize="100px"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toTopOf="@+id/top_guide" />
+
+    <TextView
+        android:id="@+id/login_tilte2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="하나로 해결"
+        android:textSize="100px"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/login_tilte1"
+        app:layout_constraintTop_toBottomOf="@+id/Login_tilte" />
+
+    <TextView
+        android:id="@+id/login_tilte1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="(브랜드명)"
+        android:textSize="100px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toBottomOf="@+id/Login_tilte" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="292px" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/r_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="58px" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/l_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="58px" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="1972px" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="646px" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 서비스 이용을 위해 로그인 또는 회원가입을 해주세요"
+        android:textSize="40px"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/email_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="315dp" />
+
+    <TextView
+        android:id="@+id/email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textSize="55px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toTopOf="@+id/email_guide" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="203px"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="00000@mail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toTopOf="@+id/email_guide" />
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="0dp"
+        android:layout_height="203px"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="**************"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toTopOf="@+id/pw_guide" />
+
+    <CheckBox
+        android:id="@+id/ch_login"
+        android:layout_width="0dp"
+        android:layout_height="58px"
+        android:text="자동로그인"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="@+id/r_guide"
+        app:layout_constraintTop_toTopOf="@+id/ck_box_guide" />
+
+    <CheckBox
+        android:id="@+id/ch_email"
+        android:layout_width="0dp"
+        android:layout_height="58px"
+        android:text="이메일기억하기"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/ck_box_guide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pw_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="384dp" />
+
+    <TextView
+        android:id="@+id/pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textSize="55px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toTopOf="@+id/pw_guide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ck_box_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="453dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="352px" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/find_join_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="558dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/find_join_guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="596dp" />
+
+    <TextView
+        android:id="@+id/find_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:text="이메일 찾기"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/find_join_guide" />
+
+    <TextView
+        android:id="@+id/find_pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="비밀번호 찾기"
+        android:textSize="40px"
+        app:layout_constraintBottom_toBottomOf="@+id/find_email_tv"
+        app:layout_constraintStart_toEndOf="@+id/find_email_tv"
+        app:layout_constraintTop_toTopOf="@+id/find_email_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/join_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="회원가입"
+        android:textSize="40px"
+        app:layout_constraintBottom_toBottomOf="@+id/find_pw_tv"
+        app:layout_constraintEnd_toStartOf="@+id/l_guide"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/find_pw_tv"
+        app:layout_constraintTop_toTopOf="@+id/find_pw_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

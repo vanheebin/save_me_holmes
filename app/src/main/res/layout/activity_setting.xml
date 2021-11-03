@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="128px"
+                android:text="설정"
+                android:textColor="#000000"
+                android:textSize="50px" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167px"
+        android:background="#F7F7F7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="86px"
+            android:layout_marginLeft="86px"
+            android:layout_marginTop="50px"
+            android:text="서비스 설정"
+            android:textColor="#000000"
+            android:textSize="46px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="86px"
+                android:layout_marginLeft="86px"
+                android:layout_marginTop="50px"
+                android:text="푸시알림"
+                android:textColor="#000000"
+                android:textSize="46px"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/push_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="86px"
+                android:layout_marginRight="86px" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="86px"
+                android:layout_marginLeft="86px"
+                android:layout_marginTop="50px"
+                android:text="백그라운드 동작"
+                android:textColor="#000000"
+                android:textSize="46px"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/background_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="86px"
+                android:layout_marginRight="86px" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167px"
+        android:background="#F7F7F7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="86px"
+            android:layout_marginLeft="86px"
+            android:layout_marginTop="50px"
+            android:text="계정"
+            android:textColor="#000000"
+            android:textSize="46px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#503FD5"
+            android:text="로그아웃"
+            app:backgroundTint="#503FD5" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="75px"
+            android:layout_marginLeft="75px"
+            android:background="#503FD5"
+            android:text="회원탈퇴"
+            app:backgroundTint="#503FD5" />
+
+    </LinearLayout>
+
+</LinearLayout>

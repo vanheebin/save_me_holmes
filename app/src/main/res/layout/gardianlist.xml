@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86px"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="448px"
+            android:background="@drawable/roundlayout"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="134dp">
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95px"
+                android:layout_marginLeft="95px"
+                android:layout_marginTop="86px"
+                android:text="보호인 이름"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85px"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="273px"
+                android:text="보호인의 패턴 보기"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:layout_gravity="right"
+                android:layout_marginTop="121px"
+                android:layout_marginEnd="86px"
+                android:layout_marginRight="86px"
+                android:shadowColor="#000000"
+                android:text="모니터링"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="8sp"
+                app:backgroundTint="#FFFFFF"
+                app:iconPadding="0dp"
+                app:strokeColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/go_life_pattern_g"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_gravity="right"
+                android:layout_marginTop="288px"
+                android:layout_marginEnd="86px"
+                android:layout_marginRight="86px"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
